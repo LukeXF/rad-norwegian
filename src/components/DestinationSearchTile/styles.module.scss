@@ -1,0 +1,17 @@
+@import '@module';
+
+.destinationSearch {
+	background: $colour-white;
+	margin-bottom: $bsu;
+	padding: $hsu;
+	border: 5px solid $colour-primary;
+	text-align: center;
+
+	h2 {
+		font-weight: bold;
+		font-size: $font-size-base * 1.2;
+		color: $colour-primary;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
