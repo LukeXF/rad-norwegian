@@ -19,7 +19,7 @@ const Navigation = () => {
 
   return <div className={styles.navigation}>
     <Img
-      imgStyle={{ objectFit: 'contain' }}className={styles.navigationLogo} fluid={logo?.childImageSharp?.fluid}/>
+      imgStyle={{ objectFit: 'contain' }} className={styles.navigationLogo} fluid={logo?.childImageSharp?.fluid}/>
   </div>
 }
 

@@ -2,7 +2,7 @@ import React from "react"
 
 // import SEO from '@components/SEO';
 import Navigation from "@components/Navigation"
-// import Footer from '@components/Footer';
+import Footer from '@components/Footer';
 
 // main site style
 import "@styles/style.scss"
@@ -14,7 +14,7 @@ const Layout = ({ children, className = "" }) => {
       <Navigation/>
       <main>
         <div>{children}</div>
-        {/*<Footer/>*/}
+        <Footer/>
       </main>
     </div>
   )

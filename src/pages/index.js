@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import { Grid, Row, Col } from "@element-softworks/daintree"
 import DestinationSearchTile from "@components/DestinationSearchTile"
 import DestinationTile from "@components/DestinationTile"
+import Button from "../components/Button"
 
 export default function Home({
                                data: { background, destinations: { edges: destinations } }
@@ -29,6 +30,7 @@ export default function Home({
               <p>
                 You'll also have the opportunity to win a 5 day trip to Spain, courtesy of Norwegian!
               </p>
+              <Button text={"More Please"}/>
             </Col>
             <Col sm={6}>
               <Row>

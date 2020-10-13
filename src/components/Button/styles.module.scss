@@ -1,0 +1,17 @@
+@import '@module';
+
+.button {
+	background: $colour-primary;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: $hsu $hsu;
+	display: inline-flex;
+	align-items: center;
+	font-size: $font-size-base * 1.3;
+
+	img {
+		max-height: 40px;
+		margin-left: $hsu;
+	}
+}

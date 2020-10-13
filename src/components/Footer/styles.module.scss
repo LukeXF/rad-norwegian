@@ -1,0 +1,35 @@
+@import '@module';
+
+.footer {
+	background: $colour-primary;
+	color: white;
+	text-align: center;
+	display: flex;
+	padding: $qsu 0;
+
+	span, img {
+		vertical-align: middle;
+	}
+
+	span {
+		text-transform: uppercase;
+	}
+	img {
+		height: 20px;
+		margin-left: $hsu;
+	}
+
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:after {
+			content: "|";
+			margin: 0 $qsu;
+		}
+
+		&:last-child:after {
+			display: none;
+		}
+	}
+}
