@@ -1,99 +1,59 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Red Apple Digital - Front End Developer Test
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## Running the project
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+This project is built using Gatsby.js, a React-based open source framework for building websites.
 
-## 🚀 Quick start
+- `yarn install`
+- `yarn run develop`
 
-1.  **Create a Gatsby site.**
+## THE BRIEF
+Build an interactive SPA for displaying dynamic content based on provided designs.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+###Detailed brief:
+This exercise is about testing your approach and wider understanding of web technologies, dealing with asset limitations, as well as demonstrating your technical abilities. The test consists of 2 parts – mark-up and styling of a template and the implementation of a JavaScript driven component within it.
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+An additional challenge is that only incomplete mockup images have been provided. You will need to demonstrate your expertise and experience in-order to build an accessible, standards based SPA in-line with what you understand about best practices.
 
-1.  **Start developing.**
+How elaborate and creative the page elements are is totally up to you, however the page should fulfil the following criteria to be acceptable as an Minimum Viable Product.
 
-    Navigate into your new site’s directory and start it up.
+### MVP Requirements:
+- The site should be at least single A compliant against the WCAG 2.0 Accessibility guidelines.
+- It needs to use valid HTML5 and either make use of a CSS preprocessor or styled components.
+- It should be device agnostic and work effectively across all breakpoints.
+- It has to work in all modern browsers and provide graceful fallbacks for IE11.
+- Build as a Single Page Application.
+- Demonstrate usage of State management.
+- Demonstrate sensible usage of React Hooks and advanced JavaScript methods.
+- Styled as accurately as possible.
+- Demonstration of SEO and page performance best practises.
+- Content pulled in via a (dummy) REST API endpoint.
+- Feel free to use a framework/starter that you normally use.
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+### Functional Specification:
+- Destination tile:
+    - On mouseover / tap the active state of the tile is displayed and the word ‘Destination’
+should be replaced with the Destination name.
+- CTA Button:
+    - On click / tap on the CTA button should refresh the content of the Destination tiles with
+the next 6 destinations in the database.
+    - There should be a loading state for the CTA and the destination tiles (the request can be
+delayed to demonstrate this).
+- Social share buttons:
+    - On click / tap, the page meta content should be pulled into an appropriate sharer
+function. This should include an image, title text and description text.
 
-1.  **Open the source code and start editing!**
+We would like you to show off your skills as much as you can, so please feel free to add any behaviours/animations that you feel would benefit the page to make it a user-friendly and engaging piece.
 
-    Your site is now running at `http://localhost:8000`!
+Supplied:
+- WebsiteCopy.txt for website content, so you can copy and paste the text.
+- Mockups for desktop & mobile/tablet.
+- Background images.
+- Fonts.
+- Norwegian Air Logo
+- Footer icons.
+- Icons for the buttons.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+On completion:
+1. Upload your codebase to your github account and share with us.
+2. Alternatively send us the website in a zip file with instructions on how to run.
