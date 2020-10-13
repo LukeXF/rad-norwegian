@@ -1,6 +1,14 @@
 @import '@module';
 
 .navigation {
-	background: black;
+	background: $colour-primary;
 	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.navigation-logo {
+		width: 250px;
+		min-height: 100px;
+	}
 }

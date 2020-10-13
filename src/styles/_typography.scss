@@ -5,7 +5,7 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: $colour-text;
+    color: $colour-white;
     line-height: 1.5;
     font-size: 100%;
 }
@@ -18,7 +18,7 @@ h5,
 h6 {
     font-family: $font-family-heading;
     font-weight: 700;
-    color: $colour-text;
+    color: $colour-white;
     margin-top: 0;
     line-height: 1.2;
 }
@@ -47,6 +47,7 @@ h3 {
 
 p {
     margin-top: 0;
+    font-size: 1.2rem;
 }
 
 a {
