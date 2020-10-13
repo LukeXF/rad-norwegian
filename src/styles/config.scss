@@ -1,0 +1,34 @@
+$colour-primary: #d81939;
+$colour-primary-shade: darken($colour-primary, 5%);
+
+$colour-secondary: #003251;
+$colour-secondary-shade: darken($colour-secondary, 5%);
+
+$colour-black: #252525;
+$colour-white: #ffffff;
+
+$font-size-base: 1rem;
+$font-family-heading: 'Apercu Pro', 'Arial', sans-serif;
+$font-family-body: 'Apercu Pro', 'Arial', sans-serif;
+
+$bbr: 3px;
+
+$bsu: 1rem * 1.875;
+$dsu: $bsu * 2;
+$hsu: $bsu / 2;
+$qsu: $bsu / 4;
+$tsu: ($bsu / 4) * 3;
+
+$column-spacing: 30px;
+
+$transition: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-accelerate: cubic-bezier(0.4, 0, 1, 1);
+$transition-decelerate: cubic-bezier(0, 0, 0.2, 1);
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1440px;
+
+$container-width: 1200px;

@@ -10,7 +10,7 @@ This project is built using Gatsby.js, a React-based open source framework for b
 ## THE BRIEF
 Build an interactive SPA for displaying dynamic content based on provided designs.
 
-###Detailed brief:
+### Detailed brief:
 This exercise is about testing your approach and wider understanding of web technologies, dealing with asset limitations, as well as demonstrating your technical abilities. The test consists of 2 parts – mark-up and styling of a template and the implementation of a JavaScript driven component within it.
 
 An additional challenge is that only incomplete mockup images have been provided. You will need to demonstrate your expertise and experience in-order to build an accessible, standards based SPA in-line with what you understand about best practices.
