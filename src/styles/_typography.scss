@@ -78,7 +78,7 @@ a {
 	text-decoration: underline;
 
 	&:hover {
-		color: $colour-primary-shade;
+		color: darken($colour-white, 10%);
 	}
 }
 

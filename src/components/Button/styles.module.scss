@@ -13,12 +13,49 @@
 	cursor: pointer;
 	transition: background $transition-accelerate 0.2s;
 
+	&.button-loading {
+		animation: loading 2s linear 0s infinite alternate;
+
+		.button-icon {
+			//animation: buttonLoadingIcon 0.3s $transition-accelerate 0s 1;
+			animation: loadingIcon 1.25s linear 0s infinite;
+		}
+	}
+
 	&:hover {
 		background: $colour-primary-shade;
 	}
 
-	img {
-		max-height: 40px;
+	.button-icon {
 		margin-left: $hsu;
+		transform: rotate(0deg);
+		height: 40px;
+		width: 40px;
+		transform-origin: 50% 50%;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+@keyframes loadingIcon {
+	from {
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+
+	to {
+		transform: rotate(360deg) translate3d(0, 0, 0);
+	}
+}
+
+@keyframes loading {
+	from {
+		background: $colour-primary;
+	}
+
+	to {
+		background: darken($colour-primary, 12.5%);
 	}
 }

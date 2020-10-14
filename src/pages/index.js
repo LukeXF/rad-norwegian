@@ -13,7 +13,19 @@ export default function Home({
 		destinations: { edges: destinations },
 	},
 }) {
+	const [currentDestination, setCurrentDestination] = useState(null)
 	const [destionationIndex, setDestionationIndex] = useState(1)
+	const [loading, setLoading] = useState(false)
+
+	const handleNextDestinations = () => {
+		setLoading(true)
+
+		setTimeout(() => {
+			setLoading(false)
+			// reset destinationIndex to 1 if the length has reached the maximum amount of destinations, otherwise keep incrementing
+			setDestionationIndex(destionationIndex * 5 >= destinations?.length ? 1 : destionationIndex + 1)
+		}, 600)
+	}
 
 	return (
 		<Layout>
@@ -36,7 +48,12 @@ export default function Home({
 								</p>
 								<Divider margin={2} />
 								<div className={styles.homeDesktopCTA}>
-									<Button text={'More Please'} onClick={handleNextDestinations} />
+									<Button
+										text={'More Please'}
+										onClick={handleNextDestinations}
+										loading={loading}
+										icon="/images/buttons/refreshing.png"
+									/>
 								</div>
 							</Col>
 							<Col xs={12} md={7}>
@@ -45,7 +62,7 @@ export default function Home({
 										<div className={styles.homeDestinationsWrapper}>
 											<div className={styles.homeDestinations}>
 												<div className={styles.homeDestinationsDestination}>
-													<DestinationSearchTile />
+													<DestinationSearchTile destination={currentDestination} />
 												</div>
 												{destinations
 													?.slice(5 * destionationIndex - 5, 5 * destionationIndex)
@@ -54,7 +71,11 @@ export default function Home({
 															key={destination?.name}
 															className={styles.homeDestinationsDestination}
 														>
-															<DestinationTile {...destination} />
+															<DestinationTile
+																{...destination}
+																onMouseEnter={d => setCurrentDestination(d)}
+																onMouseLeave={() => setCurrentDestination(null)}
+															/>
 														</div>
 													))}
 											</div>

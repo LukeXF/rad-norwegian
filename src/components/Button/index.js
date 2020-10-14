@@ -1,11 +1,15 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-const Button = ({ text, ...props }) => {
+const Button = ({ text, icon, loading, ...props }) => {
 	return (
-		<button className={styles.button} {...props}>
+		<button className={`${styles.button} ${loading ? styles.buttonLoading : ''}`} {...props}>
 			{text}
-			<img alt="submit" src="/images/buttons/refreshing.png" />
+			{!!icon && (
+				<div className={styles.buttonIcon}>
+					<img alt="submit" src={icon} />
+				</div>
+			)}
 		</button>
 	)
 }

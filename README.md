@@ -20,14 +20,24 @@ How elaborate and creative the page elements are is totally up to you, however t
 ### MVP Requirements:
 - The site should be at least single A compliant against the WCAG 2.0 Accessibility guidelines.
 - It needs to use valid HTML5 and either make use of a CSS preprocessor or styled components.
+    - Uses SCSS and SCSS modules ✅ 
 - It should be device agnostic and work effectively across all breakpoints.
+    - Mobile up design testing on desktop, laptop, tablet and mobile devices utilising the internal CSS framework I built at my company ✅
 - It has to work in all modern browsers and provide graceful fallbacks for IE11.
+    - Powered by Gatsby, which supports auto-prefixing ✅
 - Build as a Single Page Application.
+    - Built using Gatsby which is an SPA. ✅
 - Demonstrate usage of State management.
+    - State management is used in for incrementing the destination pagination cycle ✅
 - Demonstrate sensible usage of React Hooks and advanced JavaScript methods.
+    - Optional chaining, useState are used throughout the project ✅
+    - GraphQL used with ImageSharp to dynamically load logo and background and compress accordingly ✅ 
 - Styled as accurately as possible.
+    - Desktop and mobile styling followed closely as possible in given timeframe ✅
 - Demonstration of SEO and page performance best practises.
 - Content pulled in via a (dummy) REST API endpoint.
+    - Destinations converted into JSON file and loaded through GraphQL ✅
+    - Option to convert this into a useEffect showing a fake get request if needed with set timeout
 - Feel free to use a framework/starter that you normally use.
 
 ### Functional Specification:
