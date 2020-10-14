@@ -1,5 +1,23 @@
 # Red Apple Digital - Front End Developer Test
 
+This project was completed in one night, full notes are provided further down in this readme file. 
+
+Demo available at https://rad-norwegian.netlify.app/
+
+Lighthouse report scores: 
+
+1. Performance 100%
+2. Accessibility 100%
+3. Best Practices 93% (icons from design need scaling up)
+4. SEO 100%
+5. PWA passes 100% for all three categories and is installable onto devices
+
+Todo:
+
+1. Move icons over to Font awesome to complete light house 100% support
+2. Add further support for linking to Norwegian's website with URL params (added destination 3 character code to JSON mock API will fix this)
+3. Add search modal when click white destination tile to search through mock API data dynamically (with sorting)
+ 
 ## Running the project
 
 This project is built using Gatsby.js, a React-based open source framework for building websites.

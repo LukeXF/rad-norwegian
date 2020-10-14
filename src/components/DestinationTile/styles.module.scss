@@ -11,8 +11,8 @@
 	justify-content: flex-end;
 	cursor: pointer;
 	transition: border $transition-accelerate 0.2s, background $transition-accelerate 0.2s, transform $transition 0.2s;
-	cursor: pointer;
 	transform: scale(1);
+	text-decoration: none;
 
 	&:hover {
 		background: $colour-primary-shade;
