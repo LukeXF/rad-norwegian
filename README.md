@@ -1,6 +1,6 @@
 # Red Apple Digital - Front End Developer Test
 
-This project was completed in one night, full notes are provided further down in this readme file. 
+This project was completed in one night, with the recruiter phoning me at 5:30pm before I left for the evening informing me this must be completed and submitted the same day. There are more features I wished to add, but no advanced notice was given about this task. Full notes to the requirements are provided further down in this readme file. 
 
 Demo available at https://rad-norwegian.netlify.app/
 
