@@ -9,9 +9,9 @@ const path = require('path')
 module.exports = {
 	/* Your site config here */
 	siteMetadata: {
-		title: 'Norwegian Destinations',
-		titleTemplate: '%s · Norwegian',
-		description: 'Find destination on Norwegian.',
+		title: 'Norwegian Air - Destinations',
+		titleTemplate: '%s · Norwegian Air',
+		description: 'Find destination with Norwegian Air.',
 		url: 'https://rad-norwegian.netlify.app',
 		image: '/images/preview.png',
 		author: 'LukeXF',

@@ -18,8 +18,8 @@ const Navigation = () => {
   `)
 
   return <div className={styles.navigation}>
-    <a href="https://www.norwegian.com/">
-      <Img
+    <a href="https://www.norwegian.com/" aria-label="Norwegian Air">
+      <Img alt="Norwegian Air Logo"
       imgStyle={{ objectFit: 'contain' }} className={styles.navigationLogo} fluid={logo?.childImageSharp?.fluid}/>
     </a>
   </div>
