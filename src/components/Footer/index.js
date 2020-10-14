@@ -13,10 +13,10 @@ const Footer = () => {
 				<Col xs={3}>
 					<div className={styles.footerLeft}>
 						<span>Share this</span>
-						<FacebookShareButton>
+						<FacebookShareButton url="https://rad-norwegian.netlify.app/">
 							<img alt="Share with Facebook" src="/images/footer/facebook_footer.png"/>
 						</FacebookShareButton>
-						<TwitterShareButton>
+						<TwitterShareButton url="https://rad-norwegian.netlify.app/" title="Norwegian - Discover the sound of Spain...">
 							<img alt="Share with Twitter" src="/images/footer/twitter_footer.png"/>
 						</TwitterShareButton>
 					</div>

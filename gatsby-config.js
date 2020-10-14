@@ -12,10 +12,11 @@ module.exports = {
     title: "Norwegian Destinations",
     titleTemplate: "%s · Norwegian",
     description: "Find destination on Norwegian.",
-    url: "https://norwegian.com",
+    url: "https://rad-norwegian.netlify.app",
     image: "/images/preview.png",
     author: "LukeXF",
-    authorLink: "https://github.com/LukeXF"
+    authorLink: "https://github.com/LukeXF",
+    twitterUsername: "fly_norwegian"
   },
   plugins: [
     "gatsby-plugin-sharp",
