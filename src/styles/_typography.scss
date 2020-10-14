@@ -1,23 +1,23 @@
 @import 'config';
 
 @font-face {
-	font-family: "ApercuPro";
-	src: url("../assets/fonts/Paragraph/ApercuPro.eot");
-	src: url("../assets/fonts/Paragraph/ApercuPro.woff") format("woff"),
-	url("../assets/fonts/Paragraph/ApercuPro.otf") format("otf"),
-	url("../assets/fonts/Paragraph/ApercuPro.ttf") format("truetype"),
-	url("../assets/fonts/Paragraph/ApercuPro.svg") format("svg");
+	font-family: 'ApercuPro';
+	src: url('../assets/fonts/Paragraph/ApercuPro.eot');
+	src: url('../assets/fonts/Paragraph/ApercuPro.woff') format('woff'),
+		url('../assets/fonts/Paragraph/ApercuPro.otf') format('otf'),
+		url('../assets/fonts/Paragraph/ApercuPro.ttf') format('truetype'),
+		url('../assets/fonts/Paragraph/ApercuPro.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "ApercuPro";
-	src: url("../assets/fonts/Header/ApercuPro-Bold.eot");
-	src: url("../assets/fonts/Header/ApercuPro-Bold.woff") format("woff"),
-	url("../assets/fonts/Header/ApercuPro-Bold.otf") format("otf"),
-	url("../assets/fonts/Header/ApercuPro-Bold.ttf") format("truetype"),
-	url("../assets/fonts/Header/ApercuPro-Bold.svg") format("svg");
+	font-family: 'ApercuPro';
+	src: url('../assets/fonts/Header/ApercuPro-Bold.eot');
+	src: url('../assets/fonts/Header/ApercuPro-Bold.woff') format('woff'),
+		url('../assets/fonts/Header/ApercuPro-Bold.otf') format('otf'),
+		url('../assets/fonts/Header/ApercuPro-Bold.ttf') format('truetype'),
+		url('../assets/fonts/Header/ApercuPro-Bold.svg') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -46,11 +46,11 @@ h6 {
 }
 
 h1 {
-	font-size: $font-size-base * 2.8125;
+	font-size: $font-size-base * 3;
 	margin-bottom: $bsu;
 
 	+ p {
-		margin-top: -$bsu;
+		margin-top: -$hsu;
 	}
 }
 
@@ -85,7 +85,6 @@ a {
 input {
 	caret-color: $colour-text;
 }
-
 
 .center {
 	text-align: center;

@@ -2,10 +2,23 @@
 
 .destination {
 	background: $colour-primary;
-	color: white;
-	margin-bottom: $bsu;
+	color: $colour-white;
 	padding: $hsu;
 	border: 5px solid $colour-primary;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	cursor: pointer;
+	transition: border $transition-accelerate 0.2s, background $transition-accelerate 0.2s, transform $transition 0.2s;
+	cursor: pointer;
+	transform: scale(1);
+
+	&:hover {
+		background: $colour-primary-shade;
+		border: 5px solid $colour-primary-shade;
+		transform: scale(1.025);
+	}
 
 	h2 {
 		font-weight: bold;

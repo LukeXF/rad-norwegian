@@ -1,6 +1,7 @@
 @import '@module';
 
 .button {
+	border: none;
 	background: $colour-primary;
 	color: white;
 	text-transform: uppercase;
@@ -9,6 +10,12 @@
 	display: inline-flex;
 	align-items: center;
 	font-size: $font-size-base * 1.3;
+	cursor: pointer;
+	transition: background $transition-accelerate 0.2s;
+
+	&:hover {
+		background: $colour-primary-shade;
+	}
 
 	img {
 		max-height: 40px;

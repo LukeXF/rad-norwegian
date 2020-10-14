@@ -2,10 +2,22 @@
 
 .destinationSearch {
 	background: $colour-white;
-	margin-bottom: $bsu;
 	padding: $hsu;
 	border: 5px solid $colour-primary;
 	text-align: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: border $transition-accelerate 0.2s, background $transition-accelerate 0.2s, transform $transition 0.2s;
+	cursor: pointer;
+	transform: scale(1);
+
+	&:hover {
+		background: darken($colour-white, 5%);
+		border: 5px solid $colour-primary-shade;
+		transform: scale(1.025);
+	}
 
 	h2 {
 		font-weight: bold;

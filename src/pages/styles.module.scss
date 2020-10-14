@@ -2,7 +2,7 @@
 
 .home {
 	position: relative;
-	min-height: calc(100vh - 100px - 40px);
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,15 +15,72 @@
 		bottom: 0;
 		z-index: -1;
 		overflow: hidden;
+
+		:global {
+			.gatsby-image-wrapper {
+				height: 100%;
+			}
+		}
 	}
+
 	.home-content {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		padding: $dsu 0;
 
-		h1, p {
+		h1,
+		p {
 			color: $colour-white;
+		}
+
+		.home-desktop-CTA {
+			display: none;
+
+			@include md {
+				display: block;
+			}
+		}
+
+		.home-destinations {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: $hsu;
+			grid-auto-rows: 1fr;
+
+			@include sm {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			@include md {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@include xl {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			&:before {
+				content: '';
+				width: 0;
+				padding-bottom: 100%;
+				grid-row: 1 / 1;
+				grid-column: 1 / 1;
+			}
+
+			> *:first-child {
+				grid-row: 1 / 1;
+				grid-column: 1 / 1;
+			}
+
+			//.home-destinations-destination {
+			//	&:before {
+			//		content: '';
+			//		padding-bottom: 100%;
+			//		display: inline-block;
+			//		vertical-align: top;
+			//	}
+			//}
 		}
 	}
 }

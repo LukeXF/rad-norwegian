@@ -7,13 +7,15 @@ import Footer from '@components/Footer';
 // main site style
 import "@styles/style.scss"
 
+import styles from './styles.module.scss';
+
 const Layout = ({ children, className = "" }) => {
   return (
-    <div className={`app ${className}`}>
+    <div className={`${styles.app} ${className}`}>
       {/*<SEO/>*/}
       <Navigation/>
       <main>
-        <div>{children}</div>
+        <div className={styles.content}>{children}</div>
         <Footer/>
       </main>
     </div>
