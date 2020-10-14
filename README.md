@@ -19,6 +19,7 @@ How elaborate and creative the page elements are is totally up to you, however t
 
 ### MVP Requirements:
 - The site should be at least single A compliant against the WCAG 2.0 Accessibility guidelines.
+    > - Branding colour changed to match the darker #d81939 colour that Norwegian uses on their website as the colour is the design it too bright ✅
 - It needs to use valid HTML5 and either make use of a CSS preprocessor or styled components.
     > - Uses SCSS and SCSS modules ✅ 
 - It should be device agnostic and work effectively across all breakpoints.
